@@ -28,7 +28,7 @@ python "energy management.py"
 Tip: On Windows, surround the filename with quotes (there’s a space).
 Rename the file if you prefer: mv "energy management.py" energy_management.py
 
-🚀 Quick Start
+##🚀 Quick Start
 
 *** Energy Management System Menu ***
 1. Turn On Lights     5. Turn On Appliance
@@ -47,7 +47,7 @@ TV turned on.
 Enter your choices separated by space (1-9): 8
 Total Energy Consumed: 0.87 kWh
 
-📂 Project Structure
+##📂 Project Structure
 
 expert-system/
 └── energy management.py   # Core expert-system logic
@@ -58,7 +58,7 @@ README.md        # ← you are here
 requirements.txt # (empty – uses only stdlib)
 tests/           # unit tests
 
-🧩 How It Works
+##🧩 How It Works
 State variables keep track of switch positions, appliance map and cumulative kWh.
 
 Menu loop parses a space-separated list so you can batch commands.
@@ -78,7 +78,7 @@ Persisting energy_consumed to a database or InfluxDB for dashboards.
 
 Adding rule-weights or fuzzy logic for smarter decisions.
 
-🧪 Testing
+##🧪 Testing
 
 pytest
 
@@ -95,6 +95,6 @@ def test_light_toggle():
     assert not sys.lights_on
 
 
-📜 License
+##📜 License
 This project is released under the MIT License – see LICENSE for details.
 If no LICENSE file is present, consider adding one before publishing to others.
