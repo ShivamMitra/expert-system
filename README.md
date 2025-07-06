@@ -31,14 +31,14 @@ Rename the file if you prefer: mv "energy management.py" energy_management.py
 
 
 🚀 Quick Start
-
+---
 *** Energy Management System Menu ***
 1. Turn On Lights     5. Turn On Appliance
 2. Turn Off Lights    6. Turn Off Appliance
 3. Turn On Fan        7. Simulate Room Occupancy
 4. Turn Off Fan       8. Display Energy Consumption
 9. Exit
-
+---
 Example session:
 
 Enter your choices separated by space (1-9): 1 5
