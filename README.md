@@ -81,8 +81,11 @@ tests/           # unit tests
 ## Extend it by:
 
 1.Replacing the random occupancy stub with PIR / camera input.
+
 2.Exposing functions as a REST API (e.g., using FastAPI) for mobile apps.
+
 3.Persisting energy_consumed to a database or InfluxDB for dashboards.
+
 4.Adding rule-weights or fuzzy logic for smarter decisions.
 
 
