@@ -19,12 +19,12 @@ A lightweight Python expert system that helps you **monitor and control househol
 ## 🛠️ Installation
 
 
-# 1 – Clone the repo
+1 – Clone the repo
 ```
 git clone https://github.com/ShivamMitra/expert-system.git
 cd expert-system
 ```
-#2 – Run with Python ≥ 3.8
+2 – Run with Python ≥ 3.8
 ```
 python "energy management.py"
 Tip: On Windows, surround the filename with quotes (there’s a space).
@@ -68,24 +68,19 @@ tests/           # unit tests
 
 
 ## 🧩 How It Works
-State variables keep track of switch positions, appliance map and cumulative kWh.
 
-Menu loop parses a space-separated list so you can batch commands.
+1.State variables keep track of switch positions, appliance map and cumulative kWh.
+2.Menu loop parses a space-separated list so you can batch commands.
+3.Rules (if/elif chains) enforce critical-load protection and update energy stats.
+4.Random occupancy lets you prototype presence-based automation without sensors.
 
-Rules (if/elif chains) enforce critical-load protection and update energy stats.
 
-Random occupancy lets you prototype presence-based automation without sensors.
-raw.githubusercontent.com
+## Extend it by:
 
-Extend it by:
-
-Replacing the random occupancy stub with PIR / camera input.
-
-Exposing functions as a REST API (e.g., using FastAPI) for mobile apps.
-
-Persisting energy_consumed to a database or InfluxDB for dashboards.
-
-Adding rule-weights or fuzzy logic for smarter decisions.
+1.Replacing the random occupancy stub with PIR / camera input.
+2.Exposing functions as a REST API (e.g., using FastAPI) for mobile apps.
+3.Persisting energy_consumed to a database or InfluxDB for dashboards.
+4.Adding rule-weights or fuzzy logic for smarter decisions.
 
 
 
