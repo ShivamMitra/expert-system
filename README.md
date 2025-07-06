@@ -70,8 +70,11 @@ tests/           # unit tests
 ## 🧩 How It Works
 
 1.State variables keep track of switch positions, appliance map and cumulative kWh.
+
 2.Menu loop parses a space-separated list so you can batch commands.
+
 3.Rules (if/elif chains) enforce critical-load protection and update energy stats.
+
 4.Random occupancy lets you prototype presence-based automation without sensors.
 
 
