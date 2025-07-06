@@ -20,17 +20,19 @@ A lightweight Python expert system that helps you **monitor and control househol
 
 
 # 1 – Clone the repo
+```
 git clone https://github.com/ShivamMitra/expert-system.git
 cd expert-system
-
-# 2 – Run with Python ≥ 3.8
+```
+#2 – Run with Python ≥ 3.8
+```
 python "energy management.py"
 Tip: On Windows, surround the filename with quotes (there’s a space).
 Rename the file if you prefer: mv "energy management.py" energy_management.py
+```
 
 
-
-🚀 Quick Start
+## 🚀 Quick Start
 ---
 *** Energy Management System Menu ***
 1. Turn On Lights     5. Turn On Appliance
@@ -39,8 +41,9 @@ Rename the file if you prefer: mv "energy management.py" energy_management.py
 4. Turn Off Fan       8. Display Energy Consumption
 9. Exit
 ---
-Example session:
 
+Example session:
+```
 Enter your choices separated by space (1-9): 1 5
 Lights turned on.
 Enter the appliance name: TV
@@ -48,11 +51,11 @@ TV turned on.
 
 Enter your choices separated by space (1-9): 8
 Total Energy Consumed: 0.87 kWh
+```
 
 
-
-📂 Project Structure
-
+## 📂 Project Structure
+```
 expert-system/
 └── energy management.py   # Core expert-system logic
 Feel free to add:
@@ -61,10 +64,10 @@ Feel free to add:
 README.md        # ← you are here
 requirements.txt # (empty – uses only stdlib)
 tests/           # unit tests
+```
 
 
-
-🧩 How It Works
+## 🧩 How It Works
 State variables keep track of switch positions, appliance map and cumulative kWh.
 
 Menu loop parses a space-separated list so you can batch commands.
@@ -86,9 +89,8 @@ Adding rule-weights or fuzzy logic for smarter decisions.
 
 
 
-🧪 Testing
-
-pytest
+## 🧪 Testing
+```
 
 Sample pytest skeleton (create in tests/test_basic.py):
 
@@ -101,6 +103,6 @@ def test_light_toggle():
     assert sys.lights_on
     sys.turn_off_lights()
     assert not sys.lights_on
-
+```
 
 
